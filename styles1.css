@@ -1,0 +1,145 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7; /* Light background color for the entire page */
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 1200px; /* Limit maximum width */
+  margin: 0 auto; /* Center align content */
+}
+
+/* Container for profile */
+.profile {
+  background-color: #fff;
+  box-shadow: 0 0 10px hsl(194, 100%, 50%);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  max-width: 600px; /* Set maximum width for profile container */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Profile picture styles */
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  border: 4px solid #fff; /* White border around the image */
+  box-shadow: 0 4px 8px hsl(183, 91%, 5%);
+  transition: transform 0.3s ease;
+}
+
+.profile-pic img:hover {
+  transform: scale(1.1); /* Scale image on hover */
+}
+
+/* Resume link styles */
+.resume {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.resume a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: hsl(194, 100%, 50%);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.resume a:hover {
+  background-color: #0056b3;
+}
+
+/* About section styles */
+.about {
+  margin-top: 20px;
+}
+
+.about h2 {
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.about p {
+  color: #666;
+}
+
+/* Profiles section styles */
+.profiles {
+  margin-top: 20px;
+}
+
+.profiles h2 {
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.profiles ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.profiles ul li {
+  width: 100%; /* Ensure each list item takes full width */
+  margin-bottom: 10px;
+  background-color: #f0f0f0; /* Light background color for list items */
+  color: #333; /* Default text color */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensures rounded corners with border */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  text-align: center; /* Center align text */
+  display: flex; /* Use flexbox for centering vertically */
+  align-items: center; /* Center align vertically */
+  justify-content: center; /* Center align horizontally */
+}
+
+.profiles ul li:hover {
+  background-color: #ddd; /* Slightly darker background color on hover */
+}
+
+.profiles ul li a {
+  display: block;
+  padding: 10px;
+  color: #333; /* Default text color */
+  text-decoration: none;
+}
+
+.profiles ul li a:hover {
+  color: hsl(194, 100%, 50%); /* Text color on hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .profile {
+    max-width: 100%; /* Full width on smaller screens */
+    padding: 10px; /* Smaller padding */
+  }
+
+  .profile-pic img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .resume a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .profiles ul li {
+    font-size: 14px;
+  }
+}
