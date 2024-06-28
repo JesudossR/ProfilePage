@@ -1,7 +1,8 @@
 * {
-  margin: 0;
+  margin: 10px ;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Body styles */
@@ -10,8 +11,8 @@ body {
   background-color: #f7f7f7;
   line-height: 1.6;
   padding: 20px;
-  max-width: 1200px; /* Limit maximum width */
-  margin: 0 auto; /* Center align content */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Container for profile */
@@ -47,86 +48,95 @@ body {
   text-align: center;
   margin-top: 10px;
 }
-
-.resume a {
+.resume #res{
   display: inline-block;
-  padding: 10px 20px;
+  
   background-color: hsl(194, 100%, 50%);
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
 }
+.resume a {
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+ 
+}
 
-.resume a:hover {
+.resume #res:hover {
   background-color: #0056b3;
 }
 
 /* About section styles */
 .about {
   margin-top: 20px;
+  text-align: justify;
 }
 
 .about h2 {
   color: #333;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid hsl(194, 100%, 50%);
   padding-bottom: 5px;
 }
 
 .about p {
-  color: #666;
+  color: black;
 }
 
 /* Profiles section styles */
 .profiles {
-  margin-top: 20px;
+  margin-top:10px;
 }
 
 .profiles h2 {
   color: #333;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid hsl(194, 100%, 50%);
   padding-bottom: 5px;
 }
 
 .profiles ul {
   list-style-type: none;
   padding: 0;
+  
 }
 
 .profiles ul li {
-  width: 100%; 
+  width: 100%;
   margin-bottom: 10px;
   background-color: #f0f0f0;
-  color: #333; 
+  border-color: 5px hsl(194, 100%, 50%) ;
+  color: #333;
   border-radius: 8px;
-  overflow: hidden; 
-  transition: background-color 0.3s ease; 
-  text-align: center; 
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profiles ul li:hover {
   background-color: #ddd;
+  border-radius: 10px hsl(194, 100%, 50%);
 }
 
 .profiles ul li a {
   display: block;
-  padding: 10px;
-  color: #333; 
+  padding: 3px;
+  color: #333;
   text-decoration: none;
+  
 }
 
 .profiles ul li a:hover {
   color: hsl(194, 100%, 50%);
-  border: 2px hsl(194, 100%, 50%);
-} 
+}
 
 /* Media Queries */
 @media (max-width: 768px) {
   .profile {
-    max-width: 100%; 
-    padding: 10px; 
+    max-width: 100%;
+    padding: 10px;
   }
 
   .profile-pic img {
