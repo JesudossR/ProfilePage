@@ -111,7 +111,7 @@ body {
   transition: background-color 0.3s ease;
   text-align: center;
   display: flex;
-  align-items: center;
+  margin-left: 2px;
   justify-content: center;
 }
 
@@ -125,7 +125,7 @@ body {
   padding: 3px;
   color: #333;
   text-decoration: none;
-  
+
 }
 
 .profiles ul li a:hover {

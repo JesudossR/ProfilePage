@@ -1,0 +1,158 @@
+* {
+    margin: 10px ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Container for profile */
+  .profile {
+    background-color: orange;
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Profile picture styles */
+  .profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 8px black;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-pic img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Resume link styles */
+  .resume {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .resume #res{
+    display: inline-block;
+    
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .resume a {
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+   
+  }
+  
+  .resume #res:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /* About section styles */
+  .about {
+    margin-top: 20px;
+    text-align: justify;
+  }
+  
+  .about h2 {
+    color: #333;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+  }
+  
+  .about p {
+    color: black;
+  }
+  
+  /* Profiles section styles */
+  .profiles {
+    margin-top:10px;
+  }
+  
+  .profiles h2 {
+    color: #333;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+  }
+  
+  .profiles ul {
+    list-style-type: none;
+    padding: 0;
+    
+  }
+  
+  .profiles ul li {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    border-color: 5px hsl(194, 100%, 50%) ;
+    color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: flex;
+    margin-left: 2px;
+    justify-content: center;
+  }
+  
+  .profiles ul li:hover {
+    background-color: #ddd;
+    border-radius: 10px orange;
+    box-shadow: 0 0 10px black;
+  }
+  
+  .profiles ul li a {
+    display: block;
+    padding: 3px;
+    color: #333;
+    text-decoration: none;
+  
+  }
+  
+  .profiles ul li a:hover {
+    color: orange;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .profile {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    .profile-pic img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .resume a {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .profiles ul li {
+      font-size: 14px;
+    }
+  }
+  
